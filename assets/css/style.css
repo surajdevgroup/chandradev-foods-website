@@ -39,6 +39,13 @@ img {
   z-index: 1000;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 60px;
+  min-height: 95px;
+}
 .header-flex {
   display: flex;
   justify-content: space-between;
@@ -48,16 +55,16 @@ img {
 .logo {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 20px;
 }
 .logo img {
-  height: 72px;
+  height: 82px;
   width: auto;
   transition: 0.3s;
 }
 nav ul {
   display: flex;
-  gap: 36px;
+  gap: 42px;
   list-style: none;
   align-items: center;
 }
@@ -216,4 +223,79 @@ nav a:hover {
   .hero h1 {
     font-size: 2.2rem;
   }
+}
+/* ===========================
+ABOUT COMPANY
+=========================== */
+
+.about-company {
+  padding: 90px 0;
+  background: #fff;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.about-image img {
+  width: 100%;
+  border-radius: 18px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+.about-content h3 {
+  font-size: 34px;
+  color: #0c5c2d;
+  margin-bottom: 20px;
+}
+
+.about-content p {
+  margin-bottom: 18px;
+  color: #555;
+  line-height: 1.8;
+}
+
+.about-features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.about-features div {
+  background: #f8f8f8;
+  padding: 15px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-content {
+    text-align: center;
+  }
+
+  .about-features {
+    grid-template-columns: 1fr;
+  }
+}
+.btn-primary {
+  background: #b71c1c;
+  color: #fff;
+  padding: 14px 28px;
+  border-radius: 40px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.btn-primary:hover {
+  background: #8d1717;
 }
