@@ -74,16 +74,14 @@ nav a:hover {
   background:
     linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
     url("../images/factory.JPG") center/cover;
-  min-height: 80vh;
+  min-height: 65vh;
   display: flex;
   align-items: center;
   color: #fff;
 }
 .hero-content {
-  display: grid;
-  grid-template-columns: 1.2fr 1fr;
-  gap: 40px;
-  align-items: center;
+  max-width: 700px;
+  padding: 80px 0;
 }
 .hero-right img {
   border-radius: 16px;
