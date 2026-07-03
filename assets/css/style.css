@@ -299,3 +299,8 @@ ABOUT COMPANY
 .btn-primary:hover {
   background: #8d1717;
 }
+
+.text-center {
+  text-align: center;
+  margin-top: 40px;
+}
