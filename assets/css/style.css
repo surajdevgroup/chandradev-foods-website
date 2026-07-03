@@ -79,9 +79,9 @@ nav a:hover {
 }
 .hero {
   background:
-    linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.55)),
-    url("../images/factory.JPG") center/cover;
-  min-height: 65vh;
+    linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url("../images/hero/hero-factory.jpg") center center / cover no-repeat;
+  min-height: 75vh;
   display: flex;
   align-items: center;
   color: #fff;
@@ -126,14 +126,39 @@ nav a:hover {
   color: #fff;
 }
 .section {
-  padding: 70px 0;
+  padding: 90px 0;
 }
 .light {
   background: #fff;
 }
 .section-title {
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
+}
+
+.section-title span {
+  display: inline-block;
+  color: #b71c1c;
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+.section-title h2 {
+  font-size: 38px;
+  color: #0c5c2d;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.section-title p {
+  max-width: 750px;
+  margin: auto;
+  color: #666;
+  line-height: 1.8;
+  font-size: 17px;
 }
 .center-text {
   max-width: 900px;
@@ -144,8 +169,8 @@ nav a:hover {
 .feature-grid,
 .video-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 24px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 30px;
 }
 .product-card,
 .feature-box,
