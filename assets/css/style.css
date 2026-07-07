@@ -150,6 +150,65 @@ nav a:hover {
   color: #ffd86b;
   margin: 16px 0;
 }
+/* ==========================================
+   WHY CHOOSE US
+========================================== */
+
+.why-choose {
+  padding: 90px 0;
+  background: #f8f9fa;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.why-card {
+  background: #fff;
+  padding: 35px 25px;
+  text-align: center;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+}
+
+.why-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.12);
+}
+
+.why-card i {
+  font-size: 42px;
+  color: #b71c1c;
+  margin-bottom: 20px;
+}
+
+.why-card h3 {
+  font-size: 22px;
+  color: #0c5c2d;
+  margin-bottom: 15px;
+}
+
+.why-card p {
+  color: #666;
+  line-height: 1.7;
+  font-size: 15px;
+}
+
+@media (max-width: 992px) {
+  .why-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
+}
 .btn,
 .btn-outline {
   display: inline-block;
