@@ -445,22 +445,53 @@ nav a:hover {
   aspect-ratio: 16/9;
   border: 0;
 }
-.infra-grid {
+.infrastructure-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
 }
 .markets {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  justify-content: center;
+  padding: 90px 0;
+  background: #f8f9fa;
 }
-.markets span {
-  background: #0c5c2d;
-  color: #fff;
-  padding: 8px 14px;
-  border-radius: 20px;
+
+.market-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin-top: 50px;
+}
+
+.market-box {
+  background: #fff;
+  padding: 35px 25px;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+}
+
+.market-box:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.12);
+}
+
+.market-box i {
+  font-size: 42px;
+  color: #0c5c2d;
+  margin-bottom: 18px;
+}
+
+.market-box h3 {
+  color: #0c5c2d;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.market-box p {
+  color: #666;
+  line-height: 1.7;
+  font-size: 15px;
 }
 .cta-box {
   text-align: center;
@@ -491,7 +522,7 @@ nav a:hover {
 @media (max-width: 768px) {
   .header-flex,
   .hero-content,
-  .infra-grid {
+  .infrastructure-grid {
     display: grid;
     grid-template-columns: 1fr;
   }
@@ -638,5 +669,12 @@ ABOUT COMPANY
 .logo-text{
 display:none;
 }
+
+}
+@media (max-width: 768px) {
+
+  .market-grid {
+    grid-template-columns: 1fr;
+  }
 
 }
