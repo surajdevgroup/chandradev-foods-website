@@ -325,10 +325,20 @@ nav a:hover {
 .feature-box,
 .video-box {
   background: #fff;
-  border-radius: 16px;
+  border-radius: 18px;
   padding: 20px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.10);
   text-align: center;
+  transition: all 0.3s ease;
+}
+
+.video-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.15);
+}
+.videos {
+  padding: 90px 0;
+  background: #fff;
 }
 .product-card img {
   height: 240px;
