@@ -346,6 +346,10 @@ ABOUT COMPANY
   border-radius: 10px;
   font-weight: 600;
 }
+.about-features div:hover {
+    transform: translateY(-3px);
+    transition: 0.3s ease;
+}
 
 /* Mobile */
 
