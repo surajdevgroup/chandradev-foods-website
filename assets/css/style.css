@@ -343,6 +343,103 @@ nav a:hover {
   transform: translateY(-6px);
   box-shadow: 0 14px 35px rgba(0,0,0,0.12);
 }
+/* ==========================================
+   MANUFACTURING PROCESS
+========================================== */
+
+.process {
+  padding: 90px 0;
+  background: #fff;
+}
+
+.process-card {
+  position: relative;
+  background: #f8f9fa;
+  padding: 40px 25px;
+  text-align: center;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+}
+
+.process-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 40px rgba(0,0,0,0.12);
+}
+
+.process-number {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #b71c1c;
+}
+
+.process-card i {
+  font-size: 46px;
+  color: #0c5c2d;
+  margin-bottom: 20px;
+}
+
+.process-card h3 {
+  font-size: 22px;
+  color: #0c5c2d;
+  margin-bottom: 15px;
+}
+
+.process-card p {
+  color: #666;
+  line-height: 1.7;
+  font-size: 15px;
+}
+.process-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 40px;
+  align-items: start;
+  margin-top: 50px;
+}
+
+.process-left {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(220px, 1fr));
+  gap: 25px;
+}
+
+.process-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.process-right img {
+  width: 100%;
+  max-width: 420px;
+  border-radius: 18px;
+  box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+}
+
+@media (max-width: 992px) {
+  .process-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .process-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .process-left {
+    grid-template-columns: 1fr;
+  }
+
+  .process-right {
+    margin-top: 30px;
+  }
+}
+
 .video-box iframe {
   width: 100%;
   aspect-ratio: 16/9;
