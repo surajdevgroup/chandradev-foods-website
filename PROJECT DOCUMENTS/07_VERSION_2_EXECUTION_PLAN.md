@@ -2,7 +2,7 @@
 ## Version 2.0 Execution Plan
 
 ### Homepage
-- [ ] Header
+- [x] Header
 - [ ] Hero
 - [ ] About
 - [ ] Why Choose Us
